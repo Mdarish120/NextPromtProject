@@ -7,7 +7,7 @@ const Home = () => {
 <br className="max-md:hidden"/>
 <span className="orange_gradient text-center"> AI -Powered Prompts</span>
 </h1>
-<p className="desc text-center">Promptia is open source AI prompting tool for modern world to discover ,create and share creatuve promped</p>
+<p className="desc text-center">Promptia is open source AI prompting tool for modern world to discover ,create and share creative promped</p>
    <Feed/>
 
     </section>
