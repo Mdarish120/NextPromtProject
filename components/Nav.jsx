@@ -60,6 +60,7 @@ const Nav = () => {
   <div className="flex">
      <Image  src={session?.user.image}  width={37} height={37}  className="rounded-full" onClick={()=>{
       setToggleDropdown((prev)=>!prev)}}/>
+      {/* dropdown */}
       { toggleDropdown &&  (
         <div className="dropdown">
         <Link 
@@ -71,9 +72,9 @@ const Nav = () => {
         </Link>
      
         <Link 
-    href="/create-prompt" 
+        href="/create-prompt" 
          className="dropdown_link"
-        onClick={()=>setToggleDropdown(false)  }
+        onClick={()=>setToggleDropdown(false)}
          >
         Create Prompt
         </Link>
@@ -90,7 +91,7 @@ const Nav = () => {
     </div>
 ) :(
 <>
-{providers && Object.values(providers ).map((provider)=>
+{providers && Object.values(providers).map((provider)=>
 (
   <button 
   type="button"

@@ -10,9 +10,10 @@ const MyProfile = () => {
   const router=useRouter();
     const [post, setPost] = useState([]);
     const {data:session}=useSession();
+    
     useEffect(() => {
         const fetchPosts=async ()=>{
-          console.log("fetchssss")
+     
          const res=await fetch(`/api/users/${session?.user.id}/posts`);
          const data=await res.json();
          setPost(data);
